@@ -2,17 +2,29 @@ document.addEventListener("DOMContentLoaded", function() {
     let scoreA = 0;
     const afficheScoreA = document.querySelector('.score-a');
     const teamAScoreButton = document.querySelector('#teamAButton');
+    const teamAColorClassement = document.querySelector('.first-team');
+    const myFirstColor = teamAColorClassement.getAttribute('data-variable');
+    const clasementTeamA = document.getElementById("teamAScore");
     teamAScoreButton.addEventListener('click', function(){
         scoreA +=1;
         afficheScoreA.innerHTML = scoreA ;
+        clasementTeamA.style.width = scoreA + '%';
+        clasementTeamA.style.backgroundColor = myFirstColor;
     });
+    
+
     
     let scoreB = 0;
     const afficheScoreB = document.querySelector('.score-b');
     const teamBScoreButton = document.querySelector('#teamBButton');
+    const clasementTeamB = document.getElementById("teamBScore");
+    const teamBColorClassement = document.querySelector('.second-team');
+    const mySecondColor = teamBColorClassement.getAttribute('data-variable');
     teamBScoreButton.addEventListener('click', function() {
         scoreB +=1;
         afficheScoreB.innerHTML = scoreB;
+        clasementTeamB.style.width = scoreB + '%';
+        clasementTeamB.style.backgroundColor = mySecondColor;
     });
    
 });
