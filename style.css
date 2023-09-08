@@ -340,7 +340,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: left;
-    margin-top: 100px;
+    margin-top: 40px;
 }
 
 .classTeam {
@@ -364,4 +364,21 @@ a:hover {
 .score-fill {
     height: 100%;
     transition: width 0.5s ease-in-out;
+}
+.end-of-game{
+    width: 200px; /* Largeur souhaitée */
+    height: 60px; /* Hauteur souhaitée */
+    font-size: 20px; /* Taille de police souhaitée */
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 10px;
+}
+
+.end-of-game:hover {
+    background-color: #262a2c; 
+    color: #fff;
+}
+
+.end-of-game:active {
+    background-color: #2980b9; /* Couleur au clic */
 }

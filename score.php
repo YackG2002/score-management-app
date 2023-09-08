@@ -1,4 +1,5 @@
 <?php
+include('connect.php');
     $mesMatch = array(
         1 => array("Alpha", "Beta"),
         2 => array("Alpha", "Gamma"),
@@ -6,7 +7,7 @@
         4 => array("Beta", "Omega"),
         5 => array("Gamma", "Beta"),
         6 => array("Alpha", "Omega")
-    )
+    );
 ?>
 
 <!DOCTYPE html>
@@ -17,7 +18,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Tournoi Score</title>
     <script src="js/score.js"></script>
-</head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script></head>
 <body>
     <header>
         <!-- En-tête -->
@@ -58,6 +59,14 @@
                     </div>
             </div>
         </div>
+        <?php
+            $equipe1 = $mesMatch[$_GET['match']][0];
+            $equipe2 = $mesMatch[$_GET['match']][1];
+        ?>
+        <button class="end-of-game">END OF GAME</button>
+        <?php
+           
+           ?>
     </section>
    <footer>
         <p>&copy; 2023 Tournoi Score</p>

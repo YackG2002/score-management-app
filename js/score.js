@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
-    let scoreA = 0;
+
+    var scoreA = 0;
     const afficheScoreA = document.querySelector('.score-a');
     const teamAScoreButton = document.querySelector('#teamAButton');
     const teamAColorClassement = document.querySelector('.first-team');
@@ -11,10 +12,8 @@ document.addEventListener("DOMContentLoaded", function() {
         clasementTeamA.style.width = scoreA + '%';
         clasementTeamA.style.backgroundColor = myFirstColor;
     });
-    
-
-    
-    let scoreB = 0;
+        
+    var scoreB = 0;
     const afficheScoreB = document.querySelector('.score-b');
     const teamBScoreButton = document.querySelector('#teamBButton');
     const clasementTeamB = document.getElementById("teamBScore");
@@ -26,5 +25,11 @@ document.addEventListener("DOMContentLoaded", function() {
         clasementTeamB.style.width = scoreB + '%';
         clasementTeamB.style.backgroundColor = mySecondColor;
     });
-   
+    
+    const bouttonDeFin = document.querySelector('.end-of-game');
+    bouttonDeFin.addEventListener('click', function(){
+               
+
+    });
+
 });
