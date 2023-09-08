@@ -27,8 +27,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
     
     const bouttonDeFin = document.querySelector('.end-of-game');
-    bouttonDeFin.addEventListener('click', function(){
-               
+    bouttonDeFin.addEventListener('click', function(){          
 
     });
 

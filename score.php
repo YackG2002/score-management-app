@@ -18,7 +18,8 @@ include('connect.php');
     <link rel="stylesheet" href="style.css">
     <title>Tournoi Score</title>
     <script src="js/score.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script></head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
 <body>
     <header>
         <!-- En-tête -->
@@ -43,7 +44,7 @@ include('connect.php');
             </div>
         </div>
 
-            <!--Classements des équipes-->
+        <!--Classements des équipes-->
 
         <div class="scoreboard">
             <div class="classTeam">
@@ -62,11 +63,24 @@ include('connect.php');
         <?php
             $equipe1 = $mesMatch[$_GET['match']][0];
             $equipe2 = $mesMatch[$_GET['match']][1];
+            $score1 = 2;
+            $score2 = 3;
+
+           /* function insert(){ 
+            $req = "INSERT INTO match (equipe1, equipe2, score1, score2) VALUES (?, ?, ?, ?)";
+            $prepare = $connection->prepare($req);
+            if ($prepare === false) {
+                die("Erreur de préparation de la requête : " . $connection->error);
+            }
+            $prepare->bind_param("ssss", $equipe1, $equipe2, $score1, $score2);
+            if ($prepare->execute()) {
+                echo "Données insérées avec succès.";
+            } else {
+                echo "Erreur lors de l'insertion des données : " . $prepare->error;
+            }}*/
         ?>
-        <button class="end-of-game">END OF GAME</button>
-        <?php
-           
-           ?>
+
+            <button class="end-of-game" >END OF GAME</button>
     </section>
    <footer>
         <p>&copy; 2023 Tournoi Score</p>
