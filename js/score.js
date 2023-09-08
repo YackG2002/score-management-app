@@ -27,8 +27,19 @@ document.addEventListener("DOMContentLoaded", function() {
     });
     
     const bouttonDeFin = document.querySelector('.end-of-game');
-    bouttonDeFin.addEventListener('click', function(){          
-
+    bouttonDeFin.addEventListener('click', function(){      
+        Swal.fire({
+            title: "REDIRECTION !",
+            text: "You'll be redirect in another page wait a moment...",
+            icon: "info", 
+            timer: 1000,
+            showConfirmButton: false, 
+            allowOutsideClick: false, 
+            timerProgressBar: true 
+        });  
+        setTimeout(function() {
+            window.location.href = "oldMatch.php";
+        }, 1000);
     });
 
 });

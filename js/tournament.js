@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
         // "Insert score effect"
         const link = versus.querySelector('a');
         link.addEventListener("click", function(event) {
-            const confirmMessage = "Êtes-vous sûr de vouloir saisir le score pour ce match ?";
+            const confirmMessage = "Are you sure that you want play this?";
             if (!confirm(confirmMessage)) {
                 event.preventDefault();
             }
