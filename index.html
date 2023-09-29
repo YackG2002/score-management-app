@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tournoi Score</title>
+</head>
+<body>
+    <header>
+        <h1>Tournoi Score</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="tournament.html">Tournaments</a></li>
+                <li><a href="oldMatch.php">Previous Game</a></li>
+                <li><a href="team.php">Teams</a></li>
+                <li><a href="settings.php">Settings</a></li>
+            </ul>
+        </nav>
+        <button id="loginBtn">Connexion</button>
+    </header>
+    
+    <section class="banner">
+        <h2>Welcome in the Tournament Manager Score App</h2>
+        <p>Search tournament, view scores in real time and more again.</p>
+        <input type="text" id="searchInput" placeholder="Search Tournament...">
+        <button id="searchBtn">Rechercher</button>
+    </section>
+
+    <h2>Popular Tournaments</h2>
+    <section class="popular-tournaments">
+        <div class="tournament-card">
+            <a href="tournament.html">
+                <img src="tournament1.jpg" alt="Tournoi 1">
+                <h3>Football Tournament</h3>
+                <p>Date : 20/09/2023</p>
+                <button>Détails</button>
+            </a>
+        </div>
+        <div class="tournament-card">
+            <a href="tournament.html">
+                <img src="tournament2.jpg" alt="Tournoi 1">
+                <h3>Basket-Ball Tournament</h3>
+                <p>Date : 06/10/2023</p>
+                <button>Détails</button>
+            </a>
+        </div>
+        <div class="tournament-card">
+            <a href="tournament.html">
+                <img src="tournament3.jpg" alt="Tournoi 1">
+                <h3>Volley Ball Tournament</h3>
+                <p>Date : 16/12/2023</p>
+                <button>Détails</button>
+            </a>
+        </div>
+    </section>
+    
+    
+    <footer>
+        <p>&copy; 2023 Tournoi Score</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
